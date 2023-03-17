@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Serif', serif;
+}
+
+:root {
+  --main-color: hsl(236, 87%, 15%);
+  --secondary-color: hsl(193, 78%, 86%);
+  --tertiary-color: #f7f7f7;
+}
+
+nav {
+  background-color: var(--main-color);
+  text-align: left;
+  border-bottom: 1.5rem solid white;
+}
+
+.nav-link {
+  font-size: 2.5rem;
+  color: white;
+  padding-right: 10rem;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.navbar-links-container {
+  display: flex;
+}
+
+.navbar-links-container:first-child {
+  padding-left: 10rem;
+}
+.bg-video--content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.register-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  background-color: transparent;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 5rem;
+  color: var(--main-color);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .bg-video--content {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .bg-video--content {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.content-container {
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  padding-top: 5%;
+  z-index: 1;
+}
+
+input:invalid {
+  border: 1.5px solid red;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  background-color: hsl(236, 87%, 15%);
+  color: white;
+}
+
+.footer-container {
+  font-family: 'Noto Serif', serif;
+  padding-left: 15rem;
+  padding-right: 10rem;
+}
+
+.footer-nav {
+  justify-content: center;
+  color: white;
+}
+
+.footer-text {
+  justify-content: left;
+  width: auto;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.footer li {
+  margin-right: 5rem;
+}
+
+.footer a {
+  font-size: 2.5rem;
+  color: white;
+}
+
+i {
+  font-size: 20rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translate(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
